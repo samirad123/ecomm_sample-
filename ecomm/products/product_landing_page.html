@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+  <link href='https://css.gg/user.css' rel='stylesheet'>      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <title>The vibe.</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="mySlides">
+        <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_2/870x580/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627029_KCK337LRU_S09W_E02_ZHC.jpg?imwidth=870">
+      </div>
+
+      <div class="mySlides">
+        <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_9/460x497/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627030_KCK337LRU_S09W_E09_GH.jpg?imwidth=430">
+      </div>
+
+      <div class="mySlides">
+        <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/5/3/1637351172_F_22_1_LOOK_156_E15_GH.jpg?imwidth=430">
+      </div>
+
+      <div class="mySlides">
+        <img src="/Users/dhruvipaprunia/Desktop/FWD Project/image/dior_vibe4.png">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="thumbnails cursor">
+      <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_2/870x580/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627029_KCK337LRU_S09W_E02_ZHC.jpg?imwidth=870" alt="" class="active" onclick="openModal();currentSlide(1)">
+      <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_9/460x497/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627030_KCK337LRU_S09W_E09_GH.jpg?imwidth=430" alt="" onclick="openModal();currentSlide(2)">
+      <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/5/3/1637351172_F_22_1_LOOK_156_E15_GH.jpg?imwidth=430" alt="" onclick="openModal();currentSlide(3)">
+      <img src="https://www.dior.com/couture/var/dior/storage/images/folder-media/folder-productpage/folder-crossselllook/folder-femme/folder-cruise-22/folder-lookbbook/block-f_22_1_look_156/28223766-1-eng-GB/f_22_1_look_156_1440_1200.jpg" alt="" onclick="openModal();currentSlide(4)">
+    </div>
+  </div>
+
+  <div class="cart">
+    <!--
+      <h3>Cart</h3>
+    <p id ="empty">Your cart is empty.</p>-->
+    <!--<div class="item">
+      <img src="images/image-product-1-thumbnail.jpg" alt="" style="height: 60px;">
+      <p>Fall Limited Edition Sneakers $125 x 3 <strong>$375.00</strong></p>
+      <img src="images/icon-delete.svg" alt="">
+    </div>
+    <button>Checkout</button>
+    -->
+
+  </div>
+
+  <nav>
+    <div class="change">
+    <nav class="stroke">
+ <nav class="navbar">
+
+     <div class="colour">
+         <h1 class="title"><b>VISUALS</b></h1>
+
+         <div class="buy-align">
+           <a href="#"><i id="buy-item" class="fi fi-sr-user"></i></a></li>
+           <a href="#"><i id="buy-item" class="fi fi-rs-shopping-cart"></i></a></li>
+         </div>
+
+     </div>
+     <div class="list">
+         <ul class="item-list">
+
+             <li class="item-name"><a href="#">Shoes</a> </li>
+             <li class="item-name"><a href="#">Watches</a></li>
+             <li class="item-name"><a href="#">Bags</a></li>
+             <li class="item-name"><a href="#">Perfumes</a></li>
+
+         </ul>
+     </div>
+
+ </nav>
+</nav>
+     </div>
+  </nav>
+
+
+  <main>
+    <div class="imgs-col">
+      <div class="main-img">
+        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+        <div class="mySlides2">
+          <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_2/870x580/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627029_KCK337LRU_S09W_E02_ZHC.jpg?imwidth=870">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_9/460x497/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627030_KCK337LRU_S09W_E09_GH.jpg?imwidth=430">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/5/3/1637351172_F_22_1_LOOK_156_E15_GH.jpg?imwidth=430">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://www.dior.com/couture/var/dior/storage/images/folder-media/folder-productpage/folder-crossselllook/folder-femme/folder-cruise-22/folder-lookbbook/block-f_22_1_look_156/28223766-1-eng-GB/f_22_1_look_156_1440_1200.jpg">
+        </div>
+
+        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+      </div>
+
+      <div class="thumbnails cursor">
+        <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_2/870x580/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627029_KCK337LRU_S09W_E02_ZHC.jpg?imwidth=870" alt="" class="active" onclick="openModal();currentSlide(1)">
+        <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_9/460x497/17f82f742ffe127f42dca9de82fb58b1/1/d/1633627030_KCK337LRU_S09W_E09_GH.jpg?imwidth=430" alt="" onclick="openModal();currentSlide(2)">
+        <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/5/3/1637351172_F_22_1_LOOK_156_E15_GH.jpg?imwidth=430" alt="" onclick="openModal();currentSlide(3)">
+        <img src="https://www.dior.com/couture/var/dior/storage/images/folder-media/folder-productpage/folder-crossselllook/folder-femme/folder-cruise-22/folder-lookbbook/block-f_22_1_look_156/28223766-1-eng-GB/f_22_1_look_156_1440_1200.jpg" alt="" onclick="openModal();currentSlide(4)">
+      </div>
+    </div>
+
+    <div class="text-col">
+      <span id="highlight">DIOR</span>
+      <h1 id="name">THE VIBE SNEAKERS</h1>
+
+      <span id="price">
+        <h2>$<span id="amount">11,900.00</span></h2>
+      </span>
+
+      <div class="options">
+        <button><img src="images/icon-minus.svg" alt="" onclick="minus()"></button>
+        <button id="result">1</button>
+        <button onclick="plus()"><img src="images/icon-plus.svg" alt=""></button>
+        <button id="addToCart" onclick="addItem();">Add to Cart</button>
+      </div>
+
+      <p >
+        <span class="span">Transparent rubber injected inserts</span><span class="span">All-Weather Shoes</span>
+        <span class="span">white mesh, gold-tone technical fabric</span><span class="span">Comfortable Sole</span>
+        <p>Flagship style of the fashion show, the Dior Vibe sneaker reimagines the classic running shoe with the couture spirit of the House. Combining white mesh, gold-tone technical fabric and transparent rubber inserts, it offers a modern play of contrasts. Punctuated with iconic accents like the 3D-effect details, star charm on the back and 'Christian Dior' signature on the tongue, the contemporary sneaker will add a modern touch to any casual or elegant look.</p><br><br>
+      </p>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Jost', sans-serif;
+	box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display:  inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item-name {
+    padding: 0 50px;
+    margin: 0 auto;
+		padding-top: 30px;
+}
+
+
+header{
+	position: fixed;
+	width: 100%;
+	transition: .5s;
+}
+nav{
+	background: black;
+	transition: .5s;
+}
+nav.hide{
+	transform: translateY(-100%);
+}
+nav a.logo{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav ul{
+	display:flex;
+}
+nav ul li{
+	list-style: none;
+	margin-0
+}
+
+nav ul li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	transition: .3s;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+  outline: none;
+}
+.custom1-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+	color: #000;
+}
+.btn-1 {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+   background: #000;
+  color: #fff;
+}
+.btn-1:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #000;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-1:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+	color: white;
+}
+
+.btn-11 {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.btn-11:hover {
+   background:#fff;
+  color: #000;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+		color: white;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+main,
+section{
+	width: 100%;
+	height: 100vh;
+}
+section.sec1{
+	background: url("https://cdn.shopify.com/s/files/1/0615/7274/3394/files/laura-chouette-yCdsqWfxJOw-unsplash_1800x.jpg?v=1638383262")no-repeat center /cover;
+	background-attachment: fixed;
+	color: white;
+	font-size: 40px;
+}
+
+section.sec2{
+	padding: 100px;
+	height: auto;
+}
+section.sec2 h2{
+	font-size: 60px;
+}
+section.sec2 p{
+	font-size: 20px;
+}
+section.sec3{
+	background: url("https://images.unsplash.com/photo-1611255680915-114e3414c085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80")no-repeat center /cover;
+	background-attachment: fixed;
+	font-size: 60px;
+}
+section.sec4{
+	background: url("https://www.outbacksylt.com/files/image/id/10654/fixed/1/w/1000/h/1000/n/nike-air-max-97-sail-reflective-logo-ar4259-100-3.jpg")no-repeat center /cover;
+	background-attachment: fixed;
+	font-size: 60px;
+}
+
+section.sec5{
+	padding: 100px;
+	height: auto;
+	font-size: 60px;
+}
+
+section.sec6{
+	font-size: 60px;
+	background: url("https://images.unsplash.com/photo-1661030419603-1f69b322bd3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")no-repeat center /cover;
+	background-attachment: fixed;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Image Slider HTML CSS & JavaScript | CodingLearners</title>
+      <link rel="stylesheet" href="cards.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="final.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+<link href='https://css.gg/user.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   </head>
+   <style media="screen">
+
+   *{
+margin: 0;
+padding: 0;
+font-family: 'Jost', sans-serif;
+box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display:  inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item-name {
+  padding: 0 50px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#buy-item {
+margin: 10px;
+padding-right: 10px;
+padding-bottom: 40px;
+color: white;
+}
+header{
+position: fixed;
+width: 100%;
+transition: .5s;
+}
+nav{
+transition: .5s;
+}
+
+nav.hide{
+transform: translateY(-100%);
+}
+nav a.logo{
+color: #fff;
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+nav ul{
+display:flex;
+}
+nav ul li{
+list-style: none;
+line-height: 20px;
+margin:0;
+}
+
+nav ul li a{
+display: block;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+font-weight: bold;
+transition: .3s;
+}
+
+.title{
+	padding-top: 40px;
+	color: white;
+}
+.buy-align{
+padding-bottom: 50px;
+float: right;
+padding-right: 50px;
+}
+
+.align-thing{
+	padding-left: 400px;
+}
+
+small {
+  font-size: 12px;
+  color: white;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+h1.a{
+  text-decoration:none;
+  color: white;
+
+}
+   </style>
+   <body>
+     <header>
+       <div class="change">
+       <nav class="stroke">
+		<nav class="navbar">
+
+        <div class="colour">
+            <a href="final.html"><h1 class="title"><b>VISUALS</b></h1></a>
+
+
+        </div>
+        <div class="list">
+            <ul class="item-list">
+
+                <li class="item-name"><a href="shoes.html">Shoes</a> </li>
+                <li class="item-name"><a href="watches.html">Watches</a></li>
+                <li class="item-name"><a href="bags.html">Bags</a></li>
+                <li class="item-name"><a href="perfumes.html">Perfumes</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+  </nav>
+        </div>
+	</header>
+
+  <div class="align-timer">
+    <div id="timer"></div>
+  </div>
+
+<div class="centeralign">
+  <div class="content">
+     <div class="images">
+       <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_cosmograph.html"><img src="https://content.rolex.com/dam/model-page/gallery/m116519ln-0038/model-page-cosmograph-daytona_m116519ln-0038_2101uf_003_large_4.jpg?imwidth=2880" alt=""></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_speedmaster_omega.html"><img src="https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-speedmaster-57-co-axial-master-chronometer-chronograph-40-5-mm-33212415111001-gallery-2-large.jpg" alt=""></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_GMT.html"><img src="https://cdn.prod.www.manager-magazin.de/images/96c19ca5-9f4b-493b-b8d7-efea396fca91_w1518_r1.5014836795252227_fpx51.26_fpy44.91.jpg"></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_Patek%20Ladies%20watch.html"><img src="https://da8t9y7300ntx.cloudfront.net/wp-content/uploads/sites/15/2020/07/7300-1450R-001_1.jpg"></a>
+          <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_patek%20grand%205204G.html"><img src="https://www.kamine.co.jp/uploads/images/products/images/17096760206268417ec5701492694753.jpg"></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_Datejust3.html"><img src="https://content.rolex.com/dam/2022/harmonised/dial-highlight-on-full-watch/m278274-0035.png?impolicy=v6-model-specs&imwidth=380"></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_panthere.html"><img src="https://www.cartier.com/dw/image/v2/BFHP_PRD/on/demandware.static/-/Sites-cartier-master/default/dw077350cb/images/large/637892768327300865-2320314.png?sw=750&sh=750&sm=fit&sfrm=png"></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_tankhtml.html"><img src="https://www.nycdiamonddistrict.com/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/c/a/cartier.jpg" alt=""></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_cartier%20libre.html"><img src="https://www.cartier.com/dw/image/v2/BFHP_PRD/on/demandware.static/-/Sites-cartier-master/default/dwfbec76fc/images/large/637891988158797326-2356805.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+        <a href="file:///Users/samiradeepak/Desktop/ecomm/products/watch_constellation.html"><img src="https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13133412104001-gallery-2-large.jpg" alt=""></a>
+     </div>
+     <div class="btm-slides">
+        <span onclick="btm_slide(1)"></span>
+        <span onclick="btm_slide(2)"></span>
+        <span onclick="btm_slide(3)"></span>
+        <span onclick="btm_slide(4)"></span>
+        <span onclick="btm_slide(5)"></span>
+        <span onclick="btm_slide(6)"></span>
+        <span onclick="btm_slide(7)"></span>
+        <span onclick="btm_slide(8)"></span>
+        <span onclick="btm_slide(9)"></span>
+        <span onclick="btm_slide(10)"></span>
+     </div>
+     <div class="sliders left" onclick="side_slide(-1)">
+        <span class="fas fa-angle-left"></span>
+     </div>
+     <div class="sliders right" onclick="side_slide(1)">
+        <span class="fas fa-angle-right"></span>
+     </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+<div class="container">
+<div class="row">
+ <div class="footer-col">
+   <h4>company</h4>
+   <ul>
+     <li><a href="#">about us</a></li>
+     <li><a href="#">our services</a></li>
+     <li><a href="#">privacy policy</a></li>
+     <li><a href="#">affiliate program</a></li>
+   </ul>
+ </div>
+ <div class="footer-col">
+   <h4>get help</h4>
+   <ul>
+     <li><a href="#">FAQ</a></li>
+     <li><a href="#">shipping</a></li>
+     <li><a href="#">returns</a></li>
+     <li><a href="#">order status</a></li>
+     <li><a href="#">payment options</a></li>
+   </ul>
+ </div>
+ <div class="footer-col">
+   <h4>online shop</h4>
+   <ul>
+     <li><a href="#">watch</a></li>
+     <li><a href="#">bag</a></li>
+     <li><a href="#">shoes</a></li>
+     <li><a href="#">dress</a></li>
+   </ul>
+ </div>
+ <div class="footer-col">
+   <h4>follow us</h4>
+   <div class="social-links">
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+   </div>
+ </div>
+</div>
+</div>
+</footer>
+
+<script type="text/javascript">
+function updateTimer() {
+    future = Date.parse("18 april, 2023 12:30:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>days</span></div>' +
+        '<div>' + h + '<span>hours</span></div>' +
+        '<div>' + m + '<span>minutes</span></div>' +
+        '<div>' + s + '<span>seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
+
+</script>
+
+
+      <script>
+         var indexValue = 1;
+         showImg(indexValue);
+         function btm_slide(e){showImg(indexValue = e);}
+         function side_slide(e){showImg(indexValue += e);}
+         function showImg(e){
+           var i;
+           const img = document.querySelectorAll('img');
+           const slider = document.querySelectorAll('.btm-slides span');
+           if(e > img.length){indexValue = 1}
+           if(e < 1){indexValue = img.length}
+           for(i = 0; i < img.length; i++){
+             img[i].style.display = "none";
+           }
+           for(i = 0; i < slider.length; i++){
+             slider[i].style.background = "black";
+           }
+           img[indexValue-1].style.display = "block";
+           slider[indexValue-1].style.background = "white";
+         }
+      </script>
+   </body>
+</html>
